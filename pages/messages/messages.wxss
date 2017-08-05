@@ -3,7 +3,7 @@
 
 .swiper-tab{   
     width: 100%;  
-    background-color: #fff;
+    background-color: rgba(245,245,245,0.5);
     border-bottom: 1rpx solid #e0e0e0;  
     text-align: center;  
     line-height: 80rpx;
@@ -24,7 +24,7 @@
     height: 100%; 
     width: 100%; 
     overflow: visible; 
-    background-color: #eff2f5; 
+    background-color: #e5e5e5; 
 }  
 .swiper-box view{
     margin: 10rpx;

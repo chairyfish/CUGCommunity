@@ -3,13 +3,20 @@
 var app = getApp()  
 Page( {  
   data: {  
-    /** 
-        * 页面配置 
-        */  
+    /** 页面配置 */  
     winWidth: 0,  
     winHeight: 0,  
-    // tab切换  
+    /* tab切换  */
     currentTab: 0,  
+
+    card:{
+      imgpath:"/images/icon/测试头像.jpg",
+      nickname:"谣言传播者",
+      time:"2017-07-12 17:00:00",
+      question:"有什么问题是一顿火锅不能解决的？",
+      answer:"当然是...没有辣椒没有醋没有麻酱没有蒜泥没有香菜啦",
+      detail:"3评论 · 6赞同"
+    }  
   },  
   onLoad: function() {  
     var that = this;  
@@ -70,12 +77,17 @@ Page( {
     context.draw()
   },
 
-  bindFocus:function(e) {
+  junpToSearch:function(e) {
     wx.navigateTo({
-    url: '../search/search'//路径
-})
+      url: '../search/search'//路径
+    })
+  },
+  jumpToDetail:function(e) {
+    console.log("redirect")
+    wx.navigateTo({
+      url: '../detail/detail'//路径
+    })
   }
-
 })  
 
 

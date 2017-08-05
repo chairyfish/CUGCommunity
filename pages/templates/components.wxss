@@ -1,0 +1,68 @@
+.card{
+    position: relative;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    background-color: #fff; 
+    border-bottom: 1rpx solid #e5e5e5;
+    
+}
+.headimg{
+    position: absolute;
+    top: 28rpx;
+    left: 28rpx;
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 30rpx;
+}
+.nickname{
+    display: block;
+    font-size:28rpx;
+    color: #666;
+    margin-left: 90rpx;
+    margin-top: 5rpx;
+}
+.time{
+    display: block;
+    font-size:24rpx;
+    color: #a0a0a0;
+    margin-left: 90rpx;
+    margin-top: -5rpx;
+}
+.question{
+    display: block;
+    font-size: 32rpx;
+    font-weight: bold;
+    margin:15rpx 30rpx 0rpx 30rpx;
+    white-space: nowrap;
+    overflow: hidden;
+	text-overflow: ellipsis;
+}
+.answer{
+    display: block;
+    font-size: 30rpx;
+    color:#666;
+    margin:15rpx 30rpx 0rpx 30rpx;
+    white-space: nowrap;
+    overflow: hidden;
+	text-overflow: ellipsis;
+}
+.detail{
+    display: block;
+    text-align: right;
+    margin-left:30rpx;
+    margin-right:30rpx;
+    margin-top:15rpx;
+    font-size: 26rpx;
+    color:#a0a0a0;
+}
+.underline{
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    align-content: center;
+}
+.underlineA{
+    height: 1rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+
+

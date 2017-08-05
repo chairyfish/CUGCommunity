@@ -1,0 +1,35 @@
+<!--自定义组件-->
+
+
+<template name="recommend-card" >
+  <view class="card">
+    <image class="headimg" src="{{imgpath}}"></image>
+    <view class="ans-info">
+        <text class="nickname"> {{nickname}}</text>
+        <text class="time">{{time}}</text>
+    </view>
+    <text class="question"> {{question}} </text>
+    <text class="answer"> {{answer}} </text>
+    <text class="detail">{{detail}}</text>
+  </view>
+</template>
+
+
+<template name="hot-card">
+  <view class="card">
+    <image class="headimg" src="{{imgpath}}"></image>
+    <view class="ans-info">
+        <text class="nickname"> {{nickname}}</text>
+        <text class="time">{{time}}</text>
+    </view>
+    <text class="question"> {{question}} </text>
+    <text class="answer"> {{answer}} </text>
+    <text class="detail">{{detail}}</text>
+  </view>
+</template>
+
+<template name="underlineA">
+  <view class="underline">
+    <view class="underlineA"></view>
+  </view>
+</template>

@@ -1,4 +1,5 @@
 /* pages/home/home.wxss */
+@import "../templates/components.wxss";
 .search-top{
     position: fixed;
     background-color: #16a085;
@@ -30,20 +31,22 @@
 }
 .search-icon{
     position: fixed;
-    left: 30rpx;
+    left: 40rpx;
     top:12rpx;
+    width: 50rpx;
+    height: 50rpx;
 }
 
 
 
 .swiper-tab{   
     width: 100%;  
-    background-color: #fff;
-    border-bottom: 1rpx solid #e0e0e0;  
+    /*border-bottom: 1rpx solid #e0e0e0;  */
     text-align: center;  
     line-height: 80rpx;
     position: fixed;
     top:75rpx;
+    background-color: #fff;
  }  
 .swiper-tab-list{
     font-size: 28rpx;  
@@ -56,15 +59,20 @@
   
 .swiper-box{   
     position: fixed;
-    top:160rpx;
+    top:159rpx;
     height: 100%; 
     width: 100%; 
+    background-color: #e5e5e5;
     overflow: hidden; 
+    border-block-start: 1rpx solid #e0e0e0;
 }  
-.swiper-box view{
-    margin: 10rpx;   
-    text-align: center;  
+.scroll-box{
+    margin-top: 0rpx; 
+    background-color: #fff;
+   
+
 }  
+
 .canvas{
     position: fixed;
     bottom: -5rpx;
