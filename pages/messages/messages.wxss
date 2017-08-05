@@ -1,0 +1,36 @@
+/* pages/messages/messages.wxss */
+
+
+.swiper-tab{   
+    width: 100%;  
+    background-color: #fff;
+    border-bottom: 1rpx solid #e0e0e0;  
+    text-align: center;  
+    line-height: 80rpx;
+    position: fixed;
+ }  
+.swiper-tab-list{
+    font-size: 28rpx;  
+    display: inline-block;  
+    width: 50%;  
+    color: #a0a0a0;  
+}  
+.on{ color: #16a085;  
+    border-bottom: 5rpx solid #16a085;}  
+  
+.swiper-box{   
+    position: fixed;
+    top:85rpx;
+    height: 100%; 
+    width: 100%; 
+    overflow: visible; 
+    background-color: #eff2f5; 
+}  
+.swiper-box view{
+    margin: 10rpx;
+    text-align: center; 
+}  
+.shadow{
+    position: fixed;
+    bottom: -5rpx;
+}

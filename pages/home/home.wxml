@@ -1,0 +1,83 @@
+<!--home.wxml-->
+<view class="search-top">
+  <form class="search-form" bindsubmit="searchSubmit">
+    <button  class="search-button"  focus="false" bindtap="bindFocus"/>
+    <p class="search-hint">搜索问题</p>
+      <image src="/images/icon/搜索.png" class="search-icon" style="float:left;margin-left:10rpx;height:50rpx;width:50rpx"></image>
+  </form>
+</view>
+
+
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">推荐</view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">最新</view>  
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">最热</view>  
+    <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">文章</view>
+</view>  
+
+<canvas class="canvas" style="width: {{winWidth}}px; height: 40px;" canvas-id="firstCanvas"></canvas>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight-80}}px" bindchange="bindChange">  
+    <!-- 推荐 -->  
+    <swiper-item>
+    <scroll-view style="height:{{winHeight-80}}px" scroll-y="true"> 
+      <view>
+      滚动窗体测试文字
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaa
+      bbbbbbbbbbbbbbbbbbbb
+      </view>
+      </scroll-view>
+    </swiper-item>  
+    <!-- 最新 -->  
+    <swiper-item>  
+    <scroll-view style="height:{{winHeight-40}}px" scroll-y="true"> 
+      <view>最新</view> 
+      </scroll-view> 
+    </swiper-item>  
+    <!-- 最热 -->  
+    <swiper-item>
+    <scroll-view style="height:{{winHeight-40}}px" scroll-y="true">   
+      <view>最热</view>  
+      </scroll-view>
+    </swiper-item>
+    <!-- 文章 -->  
+    <swiper-item> 
+    <scroll-view style="height:{{winHeight-40}}px" scroll-y="true">  
+      <view>文章</view>  
+      </scroll-view>
+    </swiper-item>  
+</swiper> 
+
+

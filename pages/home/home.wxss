@@ -1,0 +1,71 @@
+/* pages/home/home.wxss */
+.search-top{
+    position: fixed;
+    background-color: #16a085;
+    height: 75rpx;
+    width: 100%
+}
+.search-form{
+    float: left;
+    width: 100%;
+    
+}
+.search-button{
+    height:60rpx;
+    background-color: #eff2f5;
+    border:none;
+    border-radius: 30rpx;
+    margin:7rpx 30rpx 0rpx 30rpx;
+    padding-left: 60rpx;
+    padding-right: 30rpx;
+    font-size: 28rpx;
+    color: #a0a0a0;
+}
+.search-hint{
+    position: fixed;
+    top:18rpx;
+    left:90rpx;
+    font-size: 28rpx;
+    color: #a0a0a0;
+}
+.search-icon{
+    position: fixed;
+    left: 30rpx;
+    top:12rpx;
+}
+
+
+
+.swiper-tab{   
+    width: 100%;  
+    background-color: #fff;
+    border-bottom: 1rpx solid #e0e0e0;  
+    text-align: center;  
+    line-height: 80rpx;
+    position: fixed;
+    top:75rpx;
+ }  
+.swiper-tab-list{
+    font-size: 28rpx;  
+    display: inline-block;  
+    width: 25%;  
+    color: #a0a0a0;  
+}  
+.on{ color: #16a085;  
+    border-bottom: 5rpx solid #16a085;}  
+  
+.swiper-box{   
+    position: fixed;
+    top:160rpx;
+    height: 100%; 
+    width: 100%; 
+    overflow: hidden; 
+}  
+.swiper-box view{
+    margin: 10rpx;   
+    text-align: center;  
+}  
+.canvas{
+    position: fixed;
+    bottom: -5rpx;
+}

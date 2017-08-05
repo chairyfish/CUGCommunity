@@ -1,0 +1,7 @@
+<view class="search-top">
+  <form class="search-form" bindsubmit="searchSubmit">
+    <input  placeholder="搜索问题" class="search-input"  focus="false" bindtap="search"/>
+    
+      <image src="/images/icon/搜索.png" class="search-icon" style="float:left;margin-left:10rpx;height:50rpx;width:50rpx"></image>
+  </form>
+</view>
