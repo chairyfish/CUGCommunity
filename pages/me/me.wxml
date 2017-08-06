@@ -1,0 +1,13 @@
+<view class="wall">
+</view>
+
+<view class="headimg-div">
+<image class="headimg" src="/images/icon/测试头像.jpg"></image>
+</view>
+
+<view class="nickname-div">
+    <text class="nickname">谣言家</text>
+</view>
+<view class="motto-div">
+    <text class="motto">谣言止于智者，始于智障</text>
+</view>
