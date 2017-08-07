@@ -3,11 +3,12 @@
 .search-top{
     position: fixed;
     background-color: #16a085;
+    top: -1rpx;
     height: 75rpx;
     width: 100%
 }
 .search-form{
-    float: left;
+    position: fixed;
     width: 100%;
 }
 .search-button{
@@ -75,6 +76,7 @@
     position: fixed;
     bottom: -5rpx;
 }
+
 
 
 .refresh_root {

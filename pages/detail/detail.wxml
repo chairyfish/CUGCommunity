@@ -1,3 +1,34 @@
 <!--pages/detail/detail.wxml-->
-<text>questionnumber:{{question}}</text>
+<import src="../templates/components.wxml"/>
+
+<!--<template is="question-card" data="{{...card}}"/>-->
+
+<!--问题卡片-->
+<view class="card">
+   <image class="headimg" src="{{card.imgpath}}"></image>
+    <view>
+      <text class="nickname">谣言传播者</text>
+      <text class="time">1月前</text>
+    </view>
+    <view wx:if="{{!card.followed}}" bindtap="followQuestion" class="follow-question">+关注问题</view>
+    <view wx:if="{{card.followed}}" bindtap="followQuestion" class="follow-question">已关注</view>
+    <text class="question-expand"> {{card.question}} </text>
+    <text class="{{ 'detail-' + (card.isExpanded ? 'expand' : 'collapse') }}"
+>{{card.detail}}</text>
+   <text wx:if="{{!card.isExpanded}}" class="expand-notice" bindtap="expand">展开</text>
+<view>
+    <table>
+    <ul class="question-bottom">
+    <li class="interaction-detail">{{card.follower}}关注 · {{card.comment}}评论 · {{card.read}}浏览</li>
+    <li class="add-answer-li">
+    <view class="add-answer">添加回答</view>
+    </li>
+    </ul>
+    </table>
+</view>
+
+</view>
+
+
+
 

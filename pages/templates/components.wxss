@@ -28,14 +28,20 @@
     margin-left: 100rpx;
     margin-top: -5rpx;
 }
-.question{
+.question-collapse{
+    font-size: 32rpx;
+    font-weight: bold;
+    margin:15rpx 30rpx 0rpx 30rpx;
+    display:-webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.question-expand{
     display: block;
     font-size: 32rpx;
     font-weight: bold;
     margin:15rpx 30rpx 0rpx 30rpx;
-    white-space: nowrap;
-    overflow: hidden;
-	text-overflow: ellipsis;
 }
 .answer{
     display: block;
@@ -46,7 +52,7 @@
     overflow: hidden;
 	text-overflow: ellipsis;
 }
-.detail{
+.interaction{
     display: block;
     text-align: right;
     margin-left:30rpx;
@@ -55,14 +61,16 @@
     font-size: 26rpx;
     color:#a0a0a0;
 }
-.underline{
-    padding-left: 30rpx;
-    padding-right: 30rpx;
-    align-content: center;
-}
-.underlineA{
-    height: 1rpx;
-    border-bottom: 1rpx solid #e5e5e5;
-}
 
 
+
+
+
+
+.shadow{
+    position: fixed;
+    bottom: -50rpx;
+    height: 100rpx;
+    width: 100%;
+    opacity: 3%;
+}

@@ -1,9 +1,25 @@
 // pages/detail/detail.js
 Page({
-  data:{},
+  data:{
+    card:{
+        imgpath:"/images/icon/测试头像.jpg",
+        question:"周黑鸭为什么这么黑？周黑鸭为什么这么黑？周黑鸭为什么这么黑？周黑鸭为什么这么黑？周黑鸭为什么这么黑？周黑鸭为什么这么黑？周黑鸭为什么这么黑？",
+        detail:"长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本",
+        isExpanded:false,
+        followed:false,
+        follower:"7",
+        comment:"8",
+        read:"230",
+      }
+
+  },
+
   onLoad:function(options){
     this.setData({
       question: options.question
+      
+
+      
     })
   },
   onReady:function(){
@@ -17,5 +33,33 @@ Page({
   },
   onUnload:function(){
     // 页面关闭
-  }
+  },
+  expand:function (e){
+    this.setData({
+      'card.isExpanded':true,
+    })
+  },
+
+  followQuestion:function (e){
+    if(this.data.card.followed==true){
+      this.setData({
+        'card.followed':false,
+      })
+      wx.showToast({
+        title: '取消关注',
+        icon: 'success',
+        duration: 300
+      });
+    }else{
+      this.setData({
+        'card.followed':true,
+      })
+      wx.showToast({
+        title: '成功关注',
+        icon: 'success',
+        duration: 300
+      });
+    }
+  },
+
 })

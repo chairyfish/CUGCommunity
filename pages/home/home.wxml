@@ -6,7 +6,7 @@
  点击搜索框跳转至search页面-->
 <view class="search-top">
     <form class="search-form" bindsubmit="searchSubmit">
-    <button  class="search-button" bindtap="junpToSearch"/>
+    <view  class="search-button" bindtap="junpToSearch"/>
     <text class="search-hint" bindtap="bindFocus">搜索问题</text>
       <image src="/images/icon/搜索.png" class="search-icon"></image>
     </form>
@@ -14,8 +14,7 @@
 
 
 
-<!--底部阴影 绘制-->
-<canvas class="canvas" style="width: {{winWidth}}px; height: 40px;" canvas-id="firstCanvas"></canvas>
+
 
 <!--主体页面-->
 <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight-31}}px" bindchange="bindChange"> 
@@ -121,3 +120,7 @@ bindscroll="scroll" bindscrolltolower="scrollToBottom"  bindtouchstart="start" b
     <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">最热</view>  
     <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">文章</view>
 </view>  
+
+<!--底部阴影 -->
+<template is="shadow"/>
+<!--<canvas class="canvas" style="width: {{winWidth}}px; height: 40px;" canvas-id="firstCanvas" disable-scroll="true" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd"></canvas>-->

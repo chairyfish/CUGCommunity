@@ -30,7 +30,3 @@
     margin: 10rpx;
     text-align: center; 
 }  
-.shadow{
-    position: fixed;
-    bottom: -5rpx;
-}
