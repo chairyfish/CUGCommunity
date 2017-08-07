@@ -5,7 +5,7 @@
 
 <!--问题卡片-->
 <view class="card">
-   <image class="headimg" src="{{card.imgpath}}"></image>
+    <image class="headimg" src="{{card.imgpath}}"></image>
     <view>
       <text class="nickname">谣言传播者</text>
       <text class="time">1月前</text>
@@ -15,8 +15,7 @@
     <text class="question-expand"> {{card.question}} </text>
     <text class="{{ 'detail-' + (card.isExpanded ? 'expand' : 'collapse') }}"
 >{{card.detail}}</text>
-   <text wx:if="{{!card.isExpanded}}" class="expand-notice" bindtap="expand">展开</text>
-<view>
+    <text wx:if="{{!card.isExpanded}}" class="expand-notice" bindtap="expand">展开</text>
     <table>
     <ul class="question-bottom">
     <li class="interaction-detail">{{card.follower}}关注 · {{card.comment}}评论 · {{card.read}}浏览</li>
@@ -27,7 +26,32 @@
     </table>
 </view>
 
+<view class="answer-amount-div">
+<text class="answer-amount">共{{answeramount}}条回答</text>
 </view>
+
+<view wx:for="{{[1, 2, 3, 4 ]}}" >
+<view class="card">
+    <image class="headimg" src="{{card.imgpath}}"></image>
+    <view>
+      <text class="nickname">谣言传播者</text>
+      <text class="time">1月前</text>
+    </view>
+    <text class="answer-expand">凑字数凑字数凑字数凑字数凑字数凑字数凑字数凑字数凑字数凑字数凑字数凑字数凑字数凑字数凑字数凑字数凑字数凑字数凑字数凑字数凑字数凑字数凑字数</text>
+    <view class="answer-inter-div">
+        <text class="answer-inter" bindtap="jumpToComment">
+            3评论
+        </text>
+        <text class="answer-inter">
+             · 
+        </text>
+        <text class="{{isUpvote ? 'answer-upvote':'answer-inter'}}" bindtap="upvote">
+            {{upvote}}
+        </text>
+    </view>
+</view>
+</view>
+
 
 
 

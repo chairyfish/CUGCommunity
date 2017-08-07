@@ -42,7 +42,7 @@ page{
     padding-top: 5rpx;
 }
 .question-bottom{
-    padding-top: 20rpx;
+    padding-top: 15rpx;
     width: 100%;
 }
 .interaction-detail{
@@ -51,7 +51,7 @@ page{
     width: 63%;
     margin-left:30rpx;
     margin-right:30rpx;
-    margin-top: 20rpx;
+    margin-top: 15rpx;
     font-size: 26rpx;
     color:#a0a0a0;
 }
@@ -69,4 +69,30 @@ add-answer-li{
     padding-top: 10rpx;
     color: #fff;
     border-radius: 10rpx;
+}
+
+.answer-amount-div{
+    height: 50rpx;
+    padding:12rpx 0rpx 0rpx 30rpx;
+    color: #a0a0a0;
+}
+.answer-amount{
+    font-size: 26rpx;
+    color: #a0a0a0;
+}
+.answer-inter-div{
+    text-align: right;
+    margin: 0rpx 30rpx 0rpx 0rpx;
+}
+.answer-inter{
+    display:inline-block;
+    font-size: 28rpx;
+    color: #a0a0a0;
+    margin-top: -30rpx;
+}
+.answer-upvote{
+    display:inline-block;
+    font-size: 28rpx;
+    color: #16a084;
+    margin-top: -30rpx;
 }

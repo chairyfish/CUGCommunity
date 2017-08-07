@@ -13,7 +13,7 @@
         <text class="time">{{time}}</text>
     </view>
     <text class="question-collapse"> {{question}} </text>
-    <text class="answer"> {{answer}} </text>
+    <text class="answer-collapse"> {{answer}} </text>
     <text class="interaction">{{detail}}</text>
   </view>
 </template>
@@ -27,7 +27,7 @@
         <text class="time">{{time}}</text>
     </view>
     <text class="question-collapse"> {{question}} </text>
-    <text class="answer"> {{answer}} </text>
+    <text class="answer-collapse"> {{answer}} </text>
     <text class="interaction">{{detail}}</text>
   </view>
 </template>

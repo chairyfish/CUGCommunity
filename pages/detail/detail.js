@@ -7,11 +7,13 @@ Page({
         detail:"长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本长文本",
         isExpanded:false,
         followed:false,
-        follower:"7",
-        comment:"8",
+        follower:7,
+        comment:8,
         read:"230",
-      }
-
+      },
+    answeramount:4,
+    isUpvote:false,
+    upvote:"8赞同"
   },
 
   onLoad:function(options){
@@ -44,6 +46,7 @@ Page({
     if(this.data.card.followed==true){
       this.setData({
         'card.followed':false,
+        'card.follower':this.data.card.follower-1
       })
       wx.showToast({
         title: '取消关注',
@@ -53,6 +56,7 @@ Page({
     }else{
       this.setData({
         'card.followed':true,
+        'card.follower':this.data.card.follower+1
       })
       wx.showToast({
         title: '成功关注',
@@ -61,5 +65,24 @@ Page({
       });
     }
   },
+ upvote:function (e){
+    if(this.data.isUpvote==true){
+        this.setData({
+          isUpvote:false,
+          upvote:"8赞同"
+        })
+    }else{
+        this.setData({
+          isUpvote:true,
+          upvote:"9已赞同"
+        })
+    }
+  },
+  jumpToComment:function(e) {
+    wx.navigateTo({
+      url: '../comment/comment'//路径
+    })
+  },
+  
 
 })
