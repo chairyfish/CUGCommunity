@@ -1,14 +1,14 @@
 {
   "pages":[
-    
+
     "pages/home/home",
     "pages/messages/messages",
-    "pages/index/index",
-    "pages/logs/logs",
     "pages/me/me",
-    "pages/search/search",
+    "pages/ask/ask",
     "pages/detail/detail",
-    "pages/comment/comment"
+    "pages/comment/comment",
+    "pages/answer/answer",
+     "pages/search/search"
     
   ],
   "window":{

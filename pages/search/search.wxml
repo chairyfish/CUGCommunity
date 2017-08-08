@@ -1,7 +1,20 @@
+<import src="../templates/components.wxml"/>
+
 <view class="search-top">
-  <form class="search-form" bindsubmit="searchSubmit">
-    <input  placeholder="搜索问题" class="search-input"  focus="false" bindtap="search"/>
+  <form class="search-form">
+    <input  id="search-input" placeholder="搜索问题" placeholder-style="color:#a0a0a0"class="search-input"  focus="false" bindchange="searchConfirm"/>
     
       <image src="/images/icon/搜索.png" class="search-icon" style="float:left;margin-left:10rpx;height:50rpx;width:50rpx"></image>
   </form>
+</view>
+
+<view wx:if="{{isComplete}}" class="tip">
+<text class="ask-notice">没有想要的结果？</text>
+<text class="ask-btn" bindtap="jumpToAsk">去提问</text>
+</view>
+
+<view wx:if="{{isComplete}}" class="result" >
+<view wx:for="{{[1, 2, 3, 4 ,5]}}" bindtap="jumpToDetail">
+<template is="recommend-card" data="{{...card}}"/>
+</view>
 </view>

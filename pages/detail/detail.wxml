@@ -20,7 +20,7 @@
     <ul class="question-bottom">
     <li class="interaction-detail">{{card.follower}}关注 · {{card.comment}}评论 · {{card.read}}浏览</li>
     <li class="add-answer-li">
-    <view class="add-answer">添加回答</view>
+    <view class="add-answer" bindtap="jumpToAnswer">添加回答</view>
     </li>
     </ul>
     </table>

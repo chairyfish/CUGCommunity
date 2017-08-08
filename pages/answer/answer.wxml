@@ -1,0 +1,10 @@
+<!--pages/answer/answer.wxml-->
+
+
+<view class="question-div">
+    <text class="question">{{question}}</text>
+    <text class="commit" bindtap="jumpToDetail">提交回答</text>
+</view>
+
+<textarea class="input" placeholder="输入你的回答" placeholder-style="color:#a0a0a0" auto-focus="true" maxlength="1200" cursor-spacing="10px;" style="height:{{winHeight-32}}px"/>
+

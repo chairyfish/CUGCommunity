@@ -1,4 +1,8 @@
 /* pages/search/search.wxss */
+@import "../templates/components.wxss";
+page{
+    background-color: #e5e5e5;
+}
 .search-top{
     position: fixed;
     background-color: #16a085;
@@ -19,10 +23,33 @@
     padding-left: 60rpx;
     padding-right: 30rpx;
     font-size: 28rpx;
-    color: #a0a0a0;
+    color: #666;
 }
 .search-icon{
     position: fixed;
     left: 30rpx;
     top:12rpx;
+}
+.tip{
+    height:45rpx;
+}
+.ask-notice{
+    float: left;
+    padding-left: 30rpx;
+    margin-top: 100rpx;
+    font-size: 28rpx;
+    color:#666;
+}
+.ask-btn{
+    float: right;
+    margin-right: 30rpx;
+    margin-top: 90rpx;
+    font-size: 28rpx;
+    color: #fff;
+    background-color: #16a085;
+    padding: 10rpx 30rpx 10rpx 20rpx;
+    border-radius: 5rpx;
+}
+.result{
+    margin-top: 120rpx;
 }

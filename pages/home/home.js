@@ -89,7 +89,6 @@ Page( {
     })
   },
   jumpToDetail:function(e) {
-    console.log("redirect")
     wx.navigateTo({
       url: '../detail/detail?question=666'//路径
     })

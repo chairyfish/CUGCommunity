@@ -24,7 +24,7 @@
 }
 .search-hint{
     position: fixed;
-    top:18rpx;
+    top:17rpx;
     left:90rpx;
     font-size: 28rpx;
     color: #a0a0a0;

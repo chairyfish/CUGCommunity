@@ -83,6 +83,11 @@ Page({
       url: '../comment/comment'//路径
     })
   },
+  jumpToAnswer:function(e) {
+    wx.navigateTo({
+      url: '../answer/answer?question='+this.data.card.question//路径
+    })
+  },
   
 
 })
